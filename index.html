@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weatherly</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Weatherly</h1>
+        
+        <div class="input-group">
+            <input type="text" id="apiKey" placeholder="Enter OpenWeatherMap API Key" autocomplete="off">
+        </div>
+        
+        <div class="input-group">
+            <input type="text" id="city" placeholder="Enter City (e.g., London)" autocomplete="off">
+        </div>
+        
+        <div class="input-group">
+            <input type="text" id="country" placeholder="Enter Country Code (e.g., UK or GB)" autocomplete="off">
+        </div>
+        
+        <button id="getWeatherBtn">Get Weather</button>
+        
+        <div id="error" class="error-message" style="display: none;"></div>
+        
+        <div id="weatherInfo" class="weather-info" style="display: none;">
+            <h2 id="location"></h2>
+            <div class="temperature" id="temperature"></div>
+            <div class="condition" id="condition"></div>
+            <div class="details" id="details"></div>
+        </div>
+    </div>
+    
+    <script src="app.js"></script>
+</body>
+</html>
